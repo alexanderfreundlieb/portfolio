@@ -9,6 +9,7 @@ editor:
         - { name: 'Button', element: 'a', classes: ['button'] }
         - { name: 'Like heading 1', element: 'h2', classes: ['heading--h1'] }
         - { name: 'Primary color', element: 'span', classes: ['primary-color'] }
+        - { name: 'Obfuscate', element: 'span', classes: ['baffle'] }
 
     toolbar:
       items:
