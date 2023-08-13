@@ -37,6 +37,47 @@ $(document).ready(function() {
   $('.navigation__mobile .navigation__link').click(function (){
     $('.navigation__mobile__burger--input').prop( "checked", false );
   });
+
+  /* baffle.js */
+  const baffleClass = $('.baffle');
+  const baffleItems = baffleClass.text().split(',');
+  const baffleTime = 6000;
+  const baffleTimeTotal = baffleTime * baffleItems.length;
+  baffleClass.text(baffleItems[0]);
+
+  let b = baffle('.baffle', {
+    characters: '▒░▓▒█/<>'
+  });
+
+  b.start();
+  setTimeout(function () {
+    b.reveal(1500);
+  }, 1000);
+
+  baffleLoop(1);
+
+  function revealBaffle(item) {
+    b.start();
+    b.text(text => item);
+    setTimeout(function () {
+      b.reveal(1500);
+    }, 1000);
+  }
+
+  function baffleLoop(counter) {
+    console.log('Test' + counter);
+    var i = counter;
+    setTimeout(function() {
+      revealBaffle(baffleItems[i]);
+
+      i++;
+      if (i < baffleItems.length) {
+        setBaffle(i);
+      }
+    }, baffleTime);
+  }
+
+  setInterval(function(){baffleLoop(0)}, baffleTimeTotal);
 });
 
 window.addEventListener('load', function() {
