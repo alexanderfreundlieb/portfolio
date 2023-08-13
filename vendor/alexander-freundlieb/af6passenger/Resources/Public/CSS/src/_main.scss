@@ -97,8 +97,13 @@ h4,
     margin-bottom: 1.5rem;
 }
 
-h5,
-.heading--h5 {}
+
+.header {
+    // Subheaders
+    &--sub {
+        margin-bottom: 0;
+    }
+}
 
 /******************************************************
  * Text styles
