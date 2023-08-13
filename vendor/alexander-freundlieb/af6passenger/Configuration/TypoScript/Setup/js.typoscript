@@ -1,3 +1,8 @@
-page.includeJSFooter {
-  script = EXT:af6passenger/Resources/Public/JavaScript/script.js
+page {
+  includeJSFooterlibs {
+    baffle = EXT:af6passenger/Resources/Public/JavaScript/vendor/baffle.min.js
+  }
+  includeJSFooter {
+    script = EXT:af6passenger/Resources/Public/JavaScript/script.js
+  }
 }
