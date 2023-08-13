@@ -65,14 +65,13 @@ $(document).ready(function() {
   }
 
   function baffleLoop(counter) {
-    console.log('Test' + counter);
     var i = counter;
     setTimeout(function() {
       revealBaffle(baffleItems[i]);
 
       i++;
       if (i < baffleItems.length) {
-        setBaffle(i);
+        baffleLoop(i);
       }
     }, baffleTime);
   }
