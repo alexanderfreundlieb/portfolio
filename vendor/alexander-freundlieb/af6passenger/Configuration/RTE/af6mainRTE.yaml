@@ -1,0 +1,41 @@
+imports:
+  - { resource: 'EXT:af6bus/Configuration/RTE/af6baseRTE.yaml' }
+
+editor:
+  config:
+    style:
+      definitions:
+        - { name: "Lead", element: "p", classes: ['lead'] }
+        - { name: 'Button', element: 'a', classes: ['button'] }
+        - { name: 'Like heading 1', element: 'h2', classes: ['heading--h1'] }
+        - { name: 'Primary color', element: 'span', classes: ['primary-color'] }
+
+    toolbar:
+      items:
+        - style
+        - heading
+        # grouping separator
+        - '|'
+        - bold
+        - italic
+        - subscript
+        - superscript
+        - softhyphen
+        - '|'
+        - bulletedList
+        - numberedList
+        - blockQuote
+        - alignment
+        - '|'
+        - findAndReplace
+        - link
+        - '|'
+        - removeFormat
+        - undo
+        - redo
+        - '|'
+        - insertTable
+        - '|'
+        - specialCharacters
+        - horizontalLine
+        - sourceEditing

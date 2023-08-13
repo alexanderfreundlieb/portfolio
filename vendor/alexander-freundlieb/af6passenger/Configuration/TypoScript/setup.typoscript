@@ -1,0 +1,2 @@
+@import 'EXT:af6passenger/Configuration/TypoScript/Setup/*.typoscript'
+@import 'EXT:af6passenger/Configuration/TypoScript/Setup/extensions/*.typoscript'

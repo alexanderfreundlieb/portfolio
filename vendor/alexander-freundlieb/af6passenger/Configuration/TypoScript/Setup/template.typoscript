@@ -1,0 +1,77 @@
+page {
+  10 {
+    ### Templates ###
+    templateName.stdWrap {
+      cObject = CASE
+      cObject {
+        # Add additional templates
+        #pagets__name = TEXT
+        #pagets__name = TemplateName
+      }
+    }
+
+    ### Variables ###
+    # Add additional variables
+    #variables {}
+
+    ### Data Processing ###
+    dataProcessing {
+      # Main Navigation
+      10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      10 {
+
+        special.value.field = pages
+        levels = 1
+        as = navigation
+        expandAll = 1
+        titleField = nav_title // title
+
+        dataProcessing {
+          10 = files
+          10 {
+            references.fieldName = media
+          }
+        }
+      }
+
+      # Language Navigation
+      20 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+      20 {
+        languages = auto
+        as = navigationLanguage
+      }
+
+      # Meta Navigation
+      30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      30 {
+        special = directory
+        special.value = {$plugin.af6bus.metaPid}
+        as = navigationMeta
+
+        dataProcessing {
+          10 = files
+          10 {
+            references.fieldName = media
+          }
+        }
+      }
+    }
+  }
+}
+[{$plugin.af6bus.onePage} == 1]
+  page {
+    10 {
+      dataProcessing {
+        # Main Navigation - One Page Layout
+        10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+        10 {
+          table = tt_content
+          pidInList = {$plugin.af6bus.homePid}
+          where = sectionIndex = 1
+          orderBy = sorting
+          as = navigation
+        }
+      }
+    }
+  }
+[end]

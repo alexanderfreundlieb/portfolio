@@ -1,0 +1,75 @@
+:root {
+    font-size: 20px;
+}
+
+h1, .heading--h1,
+h2, .heading--h2,
+h3, .heading--h3,
+h4, .heading--h4,
+h5, .heading--h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #1D1D1F;
+}
+
+h1,
+.heading--h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.25em;
+    margin-bottom: 0;
+}
+
+h2,
+.heading--h2 {
+    font-size: 2.5em;
+    margin-bottom: 3rem;
+}
+
+h3,
+.heading--h3 {
+    font-size: 1.5em;
+    color: #E65F78;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+h4,
+.heading--h4 {
+    font-size: 1.25em;
+    margin-bottom: 1.5rem;
+}
+
+.button {
+    display: inline-block;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+
+    color: #F5F5F7;
+    background-color: #E65F78;
+    border: 1px solid #E65F78;
+    padding: 0.75em 2em;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.button:hover {
+    color: #E65F78;
+    background-color: #F5F5F7;
+}
+.button:focus {
+    color: #E65F78;
+    background-color: #F5F5F7;
+}
+
+.primary-color {
+    color: #E65F78;;
+}
+
+.lead {
+    font-size: 1.5em;
+    font-weight: 700;
+}

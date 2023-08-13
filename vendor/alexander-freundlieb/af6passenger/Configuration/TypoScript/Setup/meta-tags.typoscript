@@ -1,0 +1,7 @@
+page {
+  meta {
+    robots = noindex,nofollow
+    viewport = width=device-width, initial-scale=1
+    author = Alexander Freundlieb
+  }
+}

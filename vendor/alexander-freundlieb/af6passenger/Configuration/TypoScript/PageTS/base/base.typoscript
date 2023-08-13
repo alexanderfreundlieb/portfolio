@@ -1,0 +1,65 @@
+### Defaults ###
+# Set default section index
+TCAdefaults.tt_content.sectionIndex = 0
+
+### Layouts ###
+# Layout numbers:
+# 1-99 Layouts for all types
+# 100 - 1000: Layouts for specific types
+
+# Add / remove layouts
+#TCEFORM.tt_content.layout {
+#  removeItems = 1, 2, 3
+
+#  types {
+#    ctype.addItems {
+#      100 = LayoutName
+#    }
+#  }
+#}
+
+### Frame classes ###
+# Add / remove frame classes
+TCEFORM.tt_content.frame_class {
+  removeItems = none, ruler-before, ruler-after, indent, indent-left, indent-right
+
+#  types {
+#    ctype.addItems {
+#      frame-class = LayoutName
+#    }
+#  }
+}
+
+### Space classes ###
+# Add / remove space classes
+TCEFORM.tt_content {
+  space_before_class {
+    removeItems = extra-small, medium, extra-large
+
+    #addItems {
+      #value = Name
+    #}
+  }
+  space_after_class {
+    removeItems = extra-small, medium, extra-large
+
+    #addItems {
+      #value = Name
+    #}
+  }
+}
+
+### Background ###
+# Add background colors
+TCEFORM.tt_content {
+  background {
+    addItems {
+      black = LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.af6bus.background.black
+      gray = LLL:EXT:af6bus/Resources/Private/Language/locallang.xlf:tca.af6bus.background.gray
+    }
+  }
+}
+
+### RTE ###
+# Set RTE Config
+RTE.default.preset = af6mainRTE
