@@ -69,7 +69,6 @@ typo3/sysext/core/Tests/Acceptance/AcceptanceTests-Job-*
 
 # Ignore composer stuff
 /bin/*
-/vendor/*
 /index.php
 /typo3/index.php
 /typo3/install.php
