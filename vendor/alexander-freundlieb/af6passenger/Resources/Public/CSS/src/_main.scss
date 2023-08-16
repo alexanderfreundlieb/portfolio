@@ -402,6 +402,34 @@ a {}
 }
 
 /******************************************************
+ * Curriculum
+ ******************************************************/
+.curriculum {
+    margin: -1.5em $grid-gap/-2;
+
+    &__heading {
+        padding-bottom: 0.5rem;
+        margin-bottom: 2rem;
+        border-bottom: 2px solid $primary;
+    }
+
+    &__content {
+        padding: 1.5em $grid-gap/2;
+
+        &__row {
+            &:not(:last-child) {
+                padding-bottom: 1em;
+            }
+        }
+
+        &--left {
+            font-weight: $font-weight-bold;
+            hyphens: none;
+        }
+    }
+}
+
+/******************************************************
  * Footer
  ******************************************************/
 .footer {}
