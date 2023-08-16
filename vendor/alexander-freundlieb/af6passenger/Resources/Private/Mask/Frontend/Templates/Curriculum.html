@@ -1,0 +1,87 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Header">
+
+    <f:render partial="Header/All" arguments="{_all}" />
+
+</f:section>
+<f:section name="Main">
+
+    <div class="curriculum content">
+        <div class="curriculum__content curriculum__work-experience col8 col-medium-6 col-small-12">
+            <h4 class="curriculum__heading">
+                <f:translate key="LLL:EXT:af6passenger/Resources/Private/Language/locallang.xlf:curriculum.work_experience" />
+            </h4>
+
+            <f:for each="{data.tx_mask_work_experience}" as="work_experience">
+                <div class="curriculum__content__row content">
+                    <div class="col3 col-medium-4 col-small-4">
+                        <p class="curriculum__content--left">{work_experience.tx_mask_work_experience_time_period}</p>
+                    </div>
+                    <div class="col9 col-medium-8 col-small-8">
+                        <p class="curriculum__content--right">
+                            {work_experience.tx_mask_work_experience_title} <br />
+                            <span class="primary-color">{work_experience.tx_mask_work_experience_function}</span>
+                        </p>
+                    </div>
+                </div>
+            </f:for>
+        </div>
+
+        <div class="curriculum__content curriculum__knowledge col4 col-medium-6 col-small-12">
+            <h4 class="curriculum__heading">
+                <f:translate key="LLL:EXT:af6passenger/Resources/Private/Language/locallang.xlf:curriculum.knowledge" />
+            </h4>
+
+            <f:for each="{data.tx_mask_knowledge}" as="knowledge">
+                <div class="curriculum__content__row content">
+                    <div class="col3 col-medium-4 col-small-4">
+                        <p class="curriculum__content--left">{knowledge.tx_mask_knowledge_category}</p>
+                    </div>
+                    <div class="col9 col-medium-8 col-small-8">
+                        <p class="curriculum__content--right">
+                            <f:format.nl2br>{knowledge.tx_mask_knowledge_name}</f:format.nl2br>
+                        </p>
+                    </div>
+                </div>
+            </f:for>
+        </div>
+
+        <div class="curriculum__content curriculum__education col8 col-medium-6 col-small-12">
+            <h4 class="curriculum__heading">
+                <f:translate key="LLL:EXT:af6passenger/Resources/Private/Language/locallang.xlf:curriculum.education" />
+            </h4>
+
+            <f:for each="{data.tx_mask_education}" as="education">
+                <div class="curriculum__content__row content">
+                    <div class="col3 col-medium-4 col-small-4">
+                        <p class="curriculum__content--left">{education.tx_mask_education_time_period}</p>
+                    </div>
+                    <div class="col9 col-medium-8 col-small-8">
+                        <p class="curriculum__content--right">
+                            {education.tx_mask_education_title} <br />
+                            <span class="primary-color">{education.tx_mask_education_place}</span>
+                        </p>
+                    </div>
+                </div>
+            </f:for>
+        </div>
+
+        <div class="curriculum__content curriculum__languages col4 col-medium-6 col-small-12">
+            <h4 class="curriculum__heading">
+                <f:translate key="LLL:EXT:af6passenger/Resources/Private/Language/locallang.xlf:curriculum.languages" />
+            </h4>
+
+            <f:for each="{data.tx_mask_languages}" as="languages">
+                <div class="curriculum__content__row">
+                    <p>
+                        {languages.tx_mask_languages_language} <br />
+                        <span class="primary-color">{languages.tx_mask_languages_level}</span>
+                    </p>
+                </div>
+            </f:for>
+        </div>
+    </div>
+
+</f:section>
+</html>
