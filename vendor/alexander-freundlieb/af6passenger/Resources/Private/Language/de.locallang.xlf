@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" target-language="de" original="messages" date="2023-06-30T22:26:59Z" product-name="af6bus">
+		<header/>
+		<body>
+			<trans-unit id="curriculum.title">
+				<source>Curriculum</source>
+				<target>Lebenslauf</target>
+			</trans-unit>
+			<trans-unit id="curriculum.description">
+				<source>Add small curriculum</source>
+				<target>Kleiner Lebenslauf hinzufügen</target>
+			</trans-unit>
+
+			<trans-unit id="curriculum.work_experience">
+				<source>Work experience</source>
+				<target>Arbeitserfahrung</target>
+			</trans-unit>
+			<trans-unit id="curriculum.work_experience.title">
+				<source>Title</source>
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="curriculum.work_experience.function">
+				<source>Function</source>
+				<target>Funktion</target>
+			</trans-unit>
+			<trans-unit id="curriculum.work_experience.time_period">
+				<source>Time period</source>
+				<target>Zeitraum</target>
+			</trans-unit>
+
+			<trans-unit id="curriculum.knowledge">
+				<source>Knowledge</source>
+				<target>Kenntnisse</target>
+			</trans-unit>
+			<trans-unit id="curriculum.knowledge.category">
+				<source>Category</source>
+				<target>Kategorie</target>
+			</trans-unit>
+			<trans-unit id="curriculum.knowledge.sub_category">
+				<source>Sub category</source>
+				<target>Unterkategorie</target>
+			</trans-unit>
+
+			<trans-unit id="curriculum.education">
+				<source>Education</source>
+				<target>Ausbildung</target>
+			</trans-unit>
+			<trans-unit id="curriculum.education.title">
+				<source>Title</source>
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="curriculum.education.place">
+				<source>Place</source>
+				<target>Ort</target>
+			</trans-unit>
+			<trans-unit id="curriculum.education.time_period">
+				<source>Time period</source>
+				<target>Zeitraum</target>
+			</trans-unit>
+
+			<trans-unit id="curriculum.languages">
+				<source>Languages</source>
+				<target>Sprachen</target>
+			</trans-unit>
+			<trans-unit id="curriculum.languages.language">
+				<source>Language</source>
+				<target>Sprache</target>
+			</trans-unit>
+			<trans-unit id="curriculum.languages.level">
+				<source>Level</source>
+				<target>Niveau</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

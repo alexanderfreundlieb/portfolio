@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2023-06-30T22:26:59Z" product-name="af6bus">
+		<header/>
+		<body>
+			<trans-unit id="curriculum.title">
+				<source>Curriculum</source>
+			</trans-unit>
+			<trans-unit id="curriculum.description">
+				<source>Add small curriculum</source>
+			</trans-unit>
+
+			<trans-unit id="curriculum.work_experience">
+				<source>Work experience</source>
+			</trans-unit>
+			<trans-unit id="curriculum.work_experience.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="curriculum.work_experience.function">
+				<source>Function</source>
+			</trans-unit>
+			<trans-unit id="curriculum.work_experience.time_period">
+				<source>Time period</source>
+			</trans-unit>
+
+			<trans-unit id="curriculum.knowledge">
+				<source>Knowledge</source>
+			</trans-unit>
+			<trans-unit id="curriculum.knowledge.category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="curriculum.knowledge.sub_category">
+				<source>Sub category</source>
+			</trans-unit>
+
+			<trans-unit id="curriculum.education">
+				<source>Education</source>
+			</trans-unit>
+			<trans-unit id="curriculum.education.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="curriculum.education.place">
+				<source>Place</source>
+			</trans-unit>
+			<trans-unit id="curriculum.education.time_period">
+				<source>Time period</source>
+			</trans-unit>
+
+			<trans-unit id="curriculum.languages">
+				<source>Languages</source>
+			</trans-unit>
+			<trans-unit id="curriculum.languages.language">
+				<source>Language</source>
+			</trans-unit>
+			<trans-unit id="curriculum.languages.level">
+				<source>Level</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
