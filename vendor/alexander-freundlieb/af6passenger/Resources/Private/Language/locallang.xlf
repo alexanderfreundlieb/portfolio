@@ -55,6 +55,10 @@
 			<trans-unit id="curriculum.languages.level">
 				<source>Level</source>
 			</trans-unit>
+
+			<trans-unit id="news.category.all">
+				<source>All</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

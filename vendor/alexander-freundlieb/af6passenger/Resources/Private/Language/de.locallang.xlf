@@ -71,6 +71,11 @@
 				<source>Level</source>
 				<target>Niveau</target>
 			</trans-unit>
+
+			<trans-unit id="news.category.all">
+				<source>All</source>
+				<target>Alle</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
