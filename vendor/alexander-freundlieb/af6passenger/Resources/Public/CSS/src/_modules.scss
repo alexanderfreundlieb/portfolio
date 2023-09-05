@@ -1,0 +1,45 @@
+/******************************************************
+ * News
+ ******************************************************/
+// Spacing between news content elements
+.main .container {
+    > .frame__type {
+        &--news_categorylist {
+            + .frame__type--news_pi1 {
+                padding-top: 0;
+                margin-top: -0.5em;
+            }
+        }
+    }
+}
+
+.news {
+    // Category listing
+    &__categories {
+        &__list {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0 -0.75em;
+        }
+
+        &__item {
+            padding: 0 0.75em;
+        }
+
+        &__link {
+            font-family: $font-family-headings;
+            font-weight: $font-weight-bold;
+            color: $font-color;
+            text-decoration: none;
+
+            transition: color .2s ease;
+
+            &:hover,
+            &:focus,
+            &--active {
+                color: $primary;
+            }
+        }
+    }
+}
