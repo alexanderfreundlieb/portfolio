@@ -156,7 +156,7 @@ a {}
         justify-content: center;
         align-items: flex-end;
 
-        transition: transform .25s ease;
+        transition: transform .2s ease;
 
         &::after {
             content: "";
@@ -166,7 +166,7 @@ a {}
             border-top: 2px solid $font-color;
             border-right: 2px solid $font-color;
             transform: rotate(-45deg);
-            transition: border-color .25s ease;
+            transition: border-color .2s ease;
         }
 
         &:hover {
@@ -236,7 +236,7 @@ a {}
             &__link {
                 text-decoration: none;
                 color: $black;
-                transition: color .25s ease;
+                transition: color .2s ease;
                 cursor: pointer;
 
                 &:hover, &--active {
@@ -279,7 +279,7 @@ a {}
             &__link {
                 text-decoration: none;
                 color: $black;
-                transition: color .25s ease;
+                transition: color .2s ease;
                 cursor: pointer;
 
                 &:hover, &--active {
