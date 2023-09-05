@@ -1,0 +1,65 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+<!--
+	=====================
+		Partials/List/Item.html
+-->
+<div class="news__list__item{f:if(condition: newsItem.istopnews, then: ' news__list__item--top')}">
+    <n:excludeDisplayedNews newsItem="{newsItem}"/>
+
+    <div class="news__list__item__inner">
+        <f:if condition="{newsItem.mediaPreviews}">
+            <f:then>
+                <div class="news__list__item__image-wrap">
+                    <f:alias map="{mediaElement: newsItem.mediaPreviews.0}">
+                        <f:if condition="{mediaElement.originalResource.type} == 2">
+                            <f:image
+                                image="{mediaElement}"
+                                class="news__list__item__image"
+                                title="{mediaElement.originalResource.title}"
+                                alt="{mediaElement.originalResource.alternative}"
+                                loading="{settings.list.media.image.lazyLoading}"
+                                maxWidth="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.maxWidth)}"
+                                maxHeight="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else: settings.list.media.image.maxHeight)}"/>
+                        </f:if>
+                        <f:if condition="{mediaElement.originalResource.type} == 4">
+                            <f:render partial="Detail/MediaVideo" arguments="{mediaElement: mediaElement}"/>
+                        </f:if>
+                        <f:if condition="{mediaElement.originalResource.type} == 5">
+                            <f:image
+                                image="{mediaElement}"
+                                class="news__list__item__image"
+                                title="{mediaElement.originalResource.title}"
+                                alt="{mediaElement.originalResource.alternative}"
+                                loading="{settings.list.media.image.lazyLoading}"
+                                maxWidth="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.maxWidth)}"
+                                maxHeight="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else: settings.list.media.image.maxHeight)}"/>
+                        </f:if>
+                    </f:alias>
+                </div>
+            </f:then>
+            <f:else>
+                <div class="news__list__item__no-image"></div>
+            </f:else>
+        </f:if>
+
+        <div class="news__list__item__text">
+            <n:link class="news__list__item__link" newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+                <div class="news__list__item__header">
+                    <h3 class="header">
+                        {newsItem.title}
+                    </h3>
+                </div>
+
+                <f:if condition="{newsItem.teaser}">
+                    <div class="news__list__item__teaser">
+                        {newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1')}
+                    </div>
+                </f:if>
+            </n:link>
+        </div>
+    </div>
+</div>
+
+</html>
