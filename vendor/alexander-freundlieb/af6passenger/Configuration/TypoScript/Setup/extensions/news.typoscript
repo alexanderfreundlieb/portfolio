@@ -1,0 +1,24 @@
+plugin.tx_news {
+  view {
+    layoutRootPaths {
+      10 = EXT:fluid_styled_content/Resources/Private/Layouts/
+      20 = EXT:af6bus/Resources/Private/Extensions/fluid_styled_content/Layouts/
+      30 = EXT:af6passenger/Resources/Private/Extensions/fluid_styled_content/Layouts/
+      40 = EXT:af6passenger/Resources/Private/Extensions/news/Layouts/
+    }
+    templateRootPaths {
+      10 = EXT:fluid_styled_content/Resources/Private/Templates/
+      20 = EXT:af6bus/Resources/Private/Extensions/fluid_styled_content/Templates/
+      30 = EXT:af6passenger/Resources/Private/Extensions/fluid_styled_content/Templates/
+      40 = EXT:af6passenger/Resources/Private/Extensions/news/Templates/
+    }
+    partialRootPaths {
+      10 = EXT:fluid_styled_content/Resources/Private/Partials/
+      20 = EXT:af6bus/Resources/Private/Extensions/fluid_styled_content/Partials/
+      30 = EXT:af6passenger/Resources/Private/Extensions/fluid_styled_content/Partials/
+      40 = EXT:af6passenger/Resources/Private/Extensions/news/Partials/
+    }
+  }
+
+  #settings < lib.contentElement.settings
+}
