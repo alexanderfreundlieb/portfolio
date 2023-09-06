@@ -42,4 +42,94 @@
             }
         }
     }
+
+    // List
+    &__list {
+        margin: -$grid-gap/2;
+
+        &__item {
+            padding: $grid-gap/2;
+
+            &__inner {
+                position: relative;
+                overflow: hidden;
+                height: 0;
+                padding-bottom: 100%;
+
+                &:hover {
+                    .news__list__item {
+                        &__image {
+                            &-wrap {
+                                transform: scale(1.25);
+                            }
+                        }
+
+                        &__no-image {
+                            + .news__list__item__text {
+                                transform: scale(1.15);
+                            }
+                        }
+
+                        &__text {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            &__image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                background-position: center;
+
+                &-wrap {
+                    position: absolute;
+                    inset: 0;
+                    transition: transform .35s ease-out;
+                }
+            }
+
+            &__no-image {
+                + .news__list__item__text {
+                    opacity: 1;
+                    transition: transform .35s ease-out;
+                }
+            }
+
+            &__text {
+                position: absolute;
+                inset: 0;
+                background-color: $primary;
+                text-align: center;
+                color: $white;
+                padding: $grid-gap/2;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: opacity .4s ease-in-out;
+            }
+
+            &__header {
+                .header {
+                    color: inherit;
+                    margin-bottom: 0.75rem;
+                    hyphens: none;
+                }
+            }
+
+            &__link {
+                color: inherit;
+                text-decoration: none;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    inset: 0;
+                }
+            }
+        }
+    }
 }
