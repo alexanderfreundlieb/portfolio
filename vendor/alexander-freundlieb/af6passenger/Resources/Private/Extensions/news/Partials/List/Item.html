@@ -5,7 +5,7 @@
 	=====================
 		Partials/List/Item.html
 -->
-<div class="news__list__item{f:if(condition: newsItem.istopnews, then: ' news__list__item--top')}">
+<div class="news__list__item col4 col-medium-6 col-small-12{f:if(condition: newsItem.istopnews, then: ' news__list__item--top')}">
     <n:excludeDisplayedNews newsItem="{newsItem}"/>
 
     <div class="news__list__item__inner">
